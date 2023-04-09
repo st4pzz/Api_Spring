@@ -2,7 +2,6 @@ package com.mensagens.projeto.demo.mensagens;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,11 +10,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 public class MensagemArquivo extends Mensagens{
 
-    Integer tamanho;
-    String tipo;
+    private Integer tamanho;
+    private String tipo;
 
 }
